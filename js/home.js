@@ -11,5 +11,5 @@ logOutBtn.addEventListener("click", function () {
 
 const href = location.href;
 if (user === null && href.includes('/home')) {
-    location.replace(`/index.html`);
+   location.replace(`Login_system/index.html`);
 }
