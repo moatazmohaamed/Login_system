@@ -112,7 +112,7 @@ function clearInputs() {
 // validation 
 
 function validationName(userName) {
-    const regex = /^[0-9A-Za-z]{3,16}$/
+    const regex = /^[0-9A-Za-z\s]{3,}$/
 
     if (regex.test(userName.value)) {
         userName.classList.remove("is-invalid");
