@@ -166,3 +166,52 @@ section {
 .swal-button--confirm {
     background-color: rgb(21, 10, 10) !important;
 }
+
+@media (max-width:779px) {
+    .container {
+        width: 80vw;
+    }
+}
+
+@media (max-width:635px) {
+    .container::before {
+        display: none;
+    }
+
+    .signin-signup {
+        flex-direction: row;
+    }
+
+    .signin-signup form.sign-up-form {
+        opacity: 1;
+    }
+
+    .sign-in-form,
+    .sign-up-form {
+        width: 60% !important;
+    }
+
+    .container.sign-up-mode2 form.sign-up-form {
+        display: flex;
+        opacity: 1;
+    }
+
+    .container.sign-up-mode2 form.sign-in-form {
+        display: none;
+    }
+
+    .panels-container {
+        display: none;
+    }
+    .account-text {
+        display: initial;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width:320px) {
+    form {
+        width: 90%;
+    }
+}
